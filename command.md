@@ -3,11 +3,11 @@ title: Command_Line
 date: 2022-09-21 00:08:00
 categories: command
 ---
-## Linux
+# Linux
 
 <!--more-->
 
-### 文件操作
+## 文件操作
 
 * cd /<Path>
   * ==打开文件夹==
@@ -34,32 +34,40 @@ categories: command
 * zip -v <ArchiveName> <FolderName>
   * ==压缩zip包==
   
-### 软件操作
+## 软件操作
 
-* apt-get update
+### apt 
+
+* apt update
   * ==更新软件源==
-* apt-get upgrade
+* apt upgrade
   * ==更新全部软件==
-* apt-get upgrade <PackageName>
+* apt upgrade <PackageName>
   * ==更新指定软件==
 * apt list --upgradable
   * ==可更新软件列表==
 * apt list --installed
   * ==查看已安装的所有软件==
-* apt-get install <PackageName>
+* apt install <PackageName>
   * ==安装软件==
-* apt-get remove <PackageName>
+* apt remove <PackageName>
   * ==删除软件==
-* apt-get --purge remove <PackageName>
+* apt --purge remove <PackageName>
   * ==删除软件和配置文件==
 
-### 常用命令
+### dpkg
 
-* systemctl stop gdm
-  * ==关闭图形界面==
+* dpkg -i <xxx>.deb
+  * ==安装软件==
+* dpkg -L <xxx>
+  * ==查看安装目录==
+* dpkg -l <xxx>
+  * ==查看版本==
+* dpkg -r <xxx>
+  * ==卸载软件==
+* dpkg -s <xxx>
+  * ==详细信息==
 
-* /etc/NX/nxserver --restart
-  * ==重启图形界面==
 
 
 ## ROS2
